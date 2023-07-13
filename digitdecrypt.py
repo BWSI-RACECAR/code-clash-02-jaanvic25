@@ -31,7 +31,7 @@ class Solution:
     def digitdecrypt(self, num):
         rank = num
         while len(str(rank)) > 1:
-            leng = len(str(num)) 
+            leng = len(str(rank)) 
             for i in range(leng):
                 rank += int(str(rank)[i])
             #type num: int
