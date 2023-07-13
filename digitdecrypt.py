@@ -34,7 +34,7 @@ class Solution:
             rank = 0
             leng = len(str(rank)) 
             for i in range(leng):
-                rank += str(rank)[i]
+                rank += int(str(rank)[i])
             #type num: int
             #return type: int
             
