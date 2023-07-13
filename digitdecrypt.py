@@ -32,14 +32,18 @@ class Solution:
         rank = num
         while len(str(rank)) > 1:
             leng = len(str(rank))
-            rank = 0
+            saver = rank
+            rank = 0 
             for i in range(leng):
-                rank += int(str(rank)[i])
+                rank += int(str(saver)[i])
             #type num: int
             #return type: int
             
             #TODO: Write code below to returnn an int with the solution to the prompt.
         return rank
+    
+        # while num > 0:
+
  
 def main():
     input1= input()
