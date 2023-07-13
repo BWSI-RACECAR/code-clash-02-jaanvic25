@@ -30,10 +30,10 @@ Input: 0 Output: 0
 class Solution:    
     def digitdecrypt(self, num):
         rank = 100
-        while len(str(rank)) > 0:
-            rank = 0
-            leng = len(str(rank)) 
-            for i in range(leng):
+        while len(str(num)) > 0:
+            rank = num
+            leng = len(str(num)) 
+            for i in range(rank):
                 rank += int(str(rank)[i])
             #type num: int
             #return type: int
