@@ -31,16 +31,14 @@ class Solution:
     def digitdecrypt(self, num):
         rank = num
         while len(str(rank)) > 1:
-            leng = len(str(rank))
-            saver = rank
-            rank = 0 
-            for i in range(leng):
-                rank += int(str(saver)[i])
+            rank = 0
+            for i in len(rank):
+                rank = rank + rank[i]
+        return rank
             #type num: int
             #return type: int
             
             #TODO: Write code below to returnn an int with the solution to the prompt.
-        return rank
     
         # while num > 0:
 
