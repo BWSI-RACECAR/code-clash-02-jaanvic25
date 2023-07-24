@@ -32,7 +32,7 @@ class Solution:
         rank = num
         while len(str(rank)) > 1:
             rank = 0
-            for i in len(rank):
+            for i in len(str(rank)):
                 rank = rank + rank[i]
         return rank
             #type num: int
