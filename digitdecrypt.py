@@ -31,12 +31,11 @@ class Solution:
     def digitdecrypt(self, num):
         rank = num
         while len(str(rank)) > 1:
+            temp = 0
             for i in range(len(str(rank))):
-                rank = rank + int(str(rank)[i])
-            if len(str(rank)) > 1:
-                rank = 0
-            else:
-                return rank
+                temp = rank + int(str(rank)[i])
+            rank = temp
+        return temp 
  
 def main():
     input1= input()
